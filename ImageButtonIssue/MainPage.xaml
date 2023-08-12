@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImageButtonIssue.MainPage">
+
+    <AbsoluteLayout>        
+
+        <ImageButton
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5,0.5,120,120"
+            Source="dotnet_bot.png"
+            WidthRequest="120"
+            HeightRequest="120"
+            CornerRadius="60"
+            Padding="30"
+            Aspect="AspectFit"                
+            BackgroundColor="Beige"
+            IsVisible="true"
+            x:Name="imageButton"/>
+
+        <ContentView
+            AbsoluteLayout.LayoutFlags="SizeProportional"
+            AbsoluteLayout.LayoutBounds="0,0,1.0,1.0"
+            BackgroundColor="#80FFFFFF"
+            IsVisible="true"
+            x:Name="overlay"
+            />
+        
+    </AbsoluteLayout>
+
+</ContentPage>
+
